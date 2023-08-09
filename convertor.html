@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Storage Convertor</title>
+    <link rel="stylesheet" href="convertor.css">
+</head>
+<body>
+    <h2>Data Storage Convertor</h2>
+    <div class="main-Container">
+        <input type="number" name="" id="userInput" placeholder="Enter your value">
+        <div class="options">
+            <div class="from">
+                <select name="inputType" id="inputType">
+                    <option value="" disabled selected hidden>From:</option>
+                    <option value="kilobyte">KiloByte</option>
+                    <option value="megabyte">MegaByte</option>
+                    <option value="gigabyte">GigaByte</option>
+                    <option value="terabyte">TeraByte</option>
+                </select>
+            </div>
+            <div class="to">
+                <select name="outputType" id="outputType">
+                    <option value="" disabled selected hidden>To:</option>
+                    <option value="kilobyte">KiloByte</option>
+                    <option value="megabyte">MegaByte</option>
+                    <option value="gigabyte">GigaByte</option>
+                    <option value="terabyte">TeraByte</option>
+                </select>
+            </div>
+           
+        </div>
+        <div id="displayOutput">Result :</div>
+        <button onclick="convertData()">Convert Now</button>
+        <script src="./convertor.js"></script>
+    </div>
+</body>
+</html>
